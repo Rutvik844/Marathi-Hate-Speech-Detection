@@ -1,4 +1,4 @@
-<img width="4032" height="2226" alt="image" src="https://github.com/user-attachments/assets/dd39a319-e780-4dbe-8153-f497173384b6" />Performance Highlights
+Performance Highlights
 ✅ Accuracy: 91.53% (DAPT-MuRIL)
 
 ✅ F1 Score: 91.53%
