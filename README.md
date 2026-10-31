@@ -1,4 +1,17 @@
-Marathi Hate Speech Detection using MuRIL and DAPT-MuRIL
+<img width="4032" height="2226" alt="image" src="https://github.com/user-attachments/assets/dd39a319-e780-4dbe-8153-f497173384b6" />Performance Highlights
+✅ Accuracy: 91.53% (DAPT-MuRIL)
+
+✅ F1 Score: 91.53%
+
+✅ ROC-AUC: 97.23%
+
+✅ 7,500 comments evaluated
+
+✅ 44 fewer classification errors than baseline MuRIL
+
+✅ Domain Adaptive Pretraining using MeCorpus Marathi corpus
+
+**Marathi Hate Speech Detection using MuRIL and DAPT-MuRIL**
 Overview
 This project focuses on detecting hate speech in Marathi social media content using state-of-the-art Transformer models. The system compares the performance of the baseline MuRIL model with a Domain Adapted MuRIL (DAPT-MuRIL) model to evaluate the impact of domain adaptation on Marathi hate speech classification.
 
@@ -106,11 +119,21 @@ Marathi-Hate-Speech-Detection/
 │
 └── report/
     └── Project_Report.pdf
-Sample Results
-Model	Accuracy	F1 Score	ROC-AUC
-MuRIL	XX.XX%	XX.XX	XX.XX
-DAPT-MuRIL	XX.XX%	XX.XX	XX.XX
-Replace the above values with your actual experimental results.
+    
+Results
+The models were evaluated on a held-out test set of 7,500 Marathi comments from the MahaHate dataset.
+
+Model	   Accuracy	Precision Recall  F1 Score  ROC-AUC
+MuRIL	    90.95%	 90.95%	   90.95%	90.95%	 96.91%
+DAPT-MuRIL	91.53%	 91.53%	   91.53%	91.53%	 97.23%
+
+Key Findings
+DAPT-MuRIL outperformed the baseline MuRIL model across all evaluation metrics.
+Accuracy improved from 90.95% to 91.53%.
+ROC-AUC improved from 0.9691 to 0.9723.
+DAPT-MuRIL correctly classified 6,865 out of 7,500 comments compared to 6,821 by MuRIL.
+Domain adaptation reduced total classification errors from 679 to 635, resulting in 44 fewer misclassified comments.
+The improvement primarily came from a reduction in missed hateful/offensive comments (false negatives).
 
 Future Work
 Real-time hate speech detection.
